@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<picture>
+  <source media=" (min-width: 650px)"
+<img srcset="JamesPleasedToMeetYou.jpg" alt="James" style="width:300px;height:300px;">
+<script>
+  <style>
+title: "Getting Away with It (All Messed Up)", artist: "James", album: "Pleased to Meet You",
+year: 2001, art: "JamesPleasedToMeetYou.jpg";
+</style>
+</script>
+</picture>
+
+<picture>
+  <source media=" (min-width: 465px)"
+<img srcset="Hooverphonic-Blue_Wonder_Power_Milk.jpg" alt="Blue Wonder" style="width:300px;height:300px;">
+<script>
+  <style>
+title: "Renaissance Affair", artist: "Hooverphonic", album: "Blue Wonder Power Milk", year: 1998, art: "Hooverphonic-Blue_Wonder_Power_Milk.jpg";
+</style>
+</script>
+</picture>
+
+<picture>
+  <source media=" (min-width: 405px)"
+<img srcset="Oh_Land_(album).png" alt="Oh Land" style="width:300px;height:300px;">
+<script>
+  <style>
+title: "White Nights", artist: "Oh Land", album: "Oh Land", year: 2011, art: "Oh_Land_(album).png";
+</style>
+</script>
+</picture>
+
+
+  let myImage;
+  for(let i=0; i<songs.length;i++){
+    console.log(songs[i].title)
+    myTitle = document.createElement('div');
+    myTitle.innerText = songs[i].title;
+    document.body.appendChild(myTitle);
+  }
+
+</body>
+</html>
